@@ -1,0 +1,152 @@
+.register {
+  /* width: fit-content; */
+  width: 22rem;
+  padding: 20px;
+  position: relative;
+  /* background-color: var(--lavender-light); */
+  border: 1px solid var(--lavender-light);
+  margin: auto;
+  height: fit-content;
+  border-radius: 10px;
+  min-width: 17rem;
+  box-shadow: var(--box-shadow-medium);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.register-header {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+.register-header-title {
+  color: var(--dark-slate-blue);
+  border-bottom: 1px solid var(--dark-slate-blue);
+  padding-bottom: 2px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  letter-spacing: 1px;
+}
+/* register header design end here */
+.register-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+.register-form-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+}
+
+.register-input-fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--light-steel-blue);
+  gap: 3px;
+  padding: 1px;
+  border-radius: 5px;
+}
+.register-legend {
+  margin-left: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: var(--font-sizexs);
+  letter-spacing: 1px;
+  color: var(--dark-slate-blue);
+  font-weight: 600;
+}
+.register-input {
+  background-color: #ede8e5;
+  color: var(--dark-slate-blue);
+}
+.register-input::placeholder {
+  font-size: var(--font-sizexs);
+  font-weight: lighter;
+  color: var(--powder-blue);
+}
+.register-button {
+  /* display: none; */
+  width: 100%;
+  padding: 5px;
+  background-color: var(--dark-slate-blue);
+  color: #ede8e5;
+  font-size: var(--font-sizexs);
+  letter-spacing: 1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 5px;
+  border: none;
+}
+.register-button:hover {
+  background-color: var(--lavender-light);
+  color: var(--dark-slate-blue);
+  cursor: pointer;
+}
+/* avatar design */
+.avatar-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.avatar-label {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--lavender-light);
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.avatar-label:hover {
+  border-color: #2980b9;
+}
+
+.avatar-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#avatar-input {
+  display: none;
+}
+.camera-icon {
+  position: absolute;
+  color: white;
+  z-index: 10;
+  height: 30px;
+  bottom: 4px;
+  right: 15px;
+}
+.register-Login-error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2px;
+}
+.login-option-in-register {
+  color: var(--light-steel-blue);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: var(--font-sizexs);
+}
+.login-option-in-register > span {
+  color: var(--dark-slate-blue);
+  font-size: var(--font-size-small);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}

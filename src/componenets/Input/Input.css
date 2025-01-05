@@ -1,0 +1,13 @@
+.input {
+  outline: none;
+  padding: 6px;
+  letter-spacing: 1px;
+  width: 100%;
+  border: none;
+  font-size: var(--font-sizexs);
+  font-family: var(--primary-font);
+  background-color: none;
+}
+.input::placeholder {
+  font-size: var(--font-sizexs);
+}
