@@ -1,20 +1,22 @@
 import { useState } from "react";
 import "./App.css";
-import { Register } from "./exportFiles";
+import { Login, Register } from "./exportFiles";
 function App() {
-  const [user, setUser] = useState(false);
+  const [userDetails, setUserDetails] = useState(null);
+  console.log("userDetails........", userDetails);
 
-  if (!user) {
+  if (!userDetails) {
     return (
-      <div className="appAuthContainer">
-        <Register />
-      </div>
+      <>
+        <Login setUserDetails={setUserDetails} userDetails={userDetails} />
+      </>
     );
   }
 
   return (
     <div className="App">
       <h1>Saji for Teacher</h1>
+      {userDetails.user.fullname}
     </div>
   );
 }
