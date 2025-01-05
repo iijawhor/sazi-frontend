@@ -1,4 +1,33 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-font: "Roboto", sans-serif; /* Example: Roboto for body text */
+  --secondary-font: "Lora", serif; /* Example: Lora for headings */
+  --heading-font: "Playfair Display", serif; /* Example: Playfair Display for headings */
+  --dark-slate-blue: #3d52a0;
+  --light-steel-blue: #7091e6;
+  --light-slate-gray: #8697c4;
+  --powder-blue: #adbbda;
+  --lavender-light: #ede8f5;
+  /* Base font size */
+  --base-font-size: 16px; /* Base size for small screens (default size) */
+  --font-sizexs: 14px; /* Base size for small screens (default size) */
+
+  /* Responsive font size for different screen sizes */
+  --font-size-small: calc(
+    0.8rem + 0.5vw
+  ); /* Smaller font size on small screens */
+  --font-size-medium: calc(1rem + 1vw); /* Medium font size */
+  --font-size-large: calc(1.5rem + 1vw); /* Larger font size for headings */
+  --font-size-xlarge: calc(
+    2rem + 1vw
+  ); /* Extra large font size for major headings */
+  --font-size-small-medium: calc(0.9rem + 0.7vw);
+  --box-shadow-normal: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --box-shadow-medium: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  --box-shadow-deep: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
