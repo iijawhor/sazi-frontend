@@ -7,6 +7,7 @@ const Input = ({
   onChange,
   className,
   name,
+  accept,
   type = "text"
 }) => {
   return (
@@ -19,6 +20,7 @@ const Input = ({
         placeholder={placeholder}
         disabled={disabled}
         onChange={onChange}
+        accept={accept}
       />
     </div>
   );
