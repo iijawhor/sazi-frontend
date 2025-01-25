@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./Login.css";
 import { Input, Button, postData } from "../../exportFiles";
+import { useDispatch } from "react-redux";
+import { userDetails as userDetailReducer } from "../../store/slices/authSlice";
 const Login = ({ userDetails, setUserDetails }) => {
   const [error, setError] = useState("");
   const [user, setUser] = useState({
     password: "",
     email: ""
   });
-
+  const dispatch = useDispatch();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser((prev) => ({
@@ -26,8 +28,16 @@ const Login = ({ userDetails, setUserDetails }) => {
 
     try {
       const response = await postData("/api/v1/users/login", user);
-      console.log("response", response);
       setUserDetails(response?.data.data);
+      const userData = response?.data.data;
+
+      // Store user data and access token in localStorage for persistence
+      localStorage.setItem("userDetails", JSON.stringify(userData));
+      localStorage.setItem("accessToken", userData.accessToken);
+
+      // Dispatch user details to Redux for state management
+      dispatch(userDetailReducer(userData));
+
       setError("");
       setUser({
         password: "",
