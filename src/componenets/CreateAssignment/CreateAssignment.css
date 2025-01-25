@@ -1,0 +1,76 @@
+.create-assignment {
+  /* border: 1px solid black; */
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.create-assignment-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+.create-assignment-header > .close-button {
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: red;
+}
+.create-assignment-form {
+  display: flex;
+  min-width: 100%;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+}
+.assignment-input {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 100%;
+  letter-spacing: 1px;
+}
+.assignment-description-file-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.assignment-subject-option-container {
+  border: 1px solid red;
+}
+.assignment-subject-grade-option-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 100%;
+  gap: 3px;
+}
+.create-assignment-button {
+  width: fit-content;
+  position: inherit;
+  right: 0;
+  background-color: #0f0f47;
+  color: #ffffff;
+  padding: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  border-radius: 5px;
+  border: none;
+}
+.assignment-option {
+  text-transform: capitalize;
+}

@@ -1,0 +1,84 @@
+.assignmentPage {
+  height: 92%;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.assignmentPage-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+.assignmentPage-header > p {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.create-assignmentPage-container {
+}
+.showCreateAssignmentPagePopup {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  color: green;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+.assign-icon {
+  font-size: 5px;
+}
+.create-assignmentPage-popup-container {
+  margin: auto;
+  display: flex;
+  right: 10px;
+  position: absolute;
+  width: 40%;
+  background-color: rgb(247, 255, 247);
+  border-radius: 10px;
+}
+/* assignment container start from here */
+.assignment-page-container {
+  /* border: 1px solid red; */
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.assignment-capsules {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  /* border: 1px solid red; */
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  gap: 10px;
+}
+.assignment-capsule {
+}
+.assignment-page-container > h1,
+.assignment-submission-title {
+  font-size: 1.3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
