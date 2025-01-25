@@ -5,24 +5,52 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { store } from "./store/store";
-import { Layout, Login } from "./exportFiles";
+import { AssignmentPage, Home, Login } from "./exportFiles";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <App />,
     children: [
       {
         path: "",
-        element: <App />
+        element: <Home />
       },
       {
-        path: "/login",
-        element: <Login />
+        path: "/my-class",
+        element: "My Class"
+      },
+      {
+        path: "/assignments",
+        element: <AssignmentPage />
+      },
+      {
+        path: "/attendance",
+        element: "attendance"
+      },
+      {
+        path: "/grade-book",
+        element: "Grade Book"
+      },
+      {
+        path: "/calender",
+        element: "Calender"
+      },
+      {
+        path: "/notification",
+        element: "Notification"
+      },
+      {
+        path: "/profile",
+        element: "Profile"
       }
     ]
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
 ]);
 

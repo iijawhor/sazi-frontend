@@ -3,6 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  width: 5px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #0f0f47;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: grab;
+  background-color: #0f0f47; /* Scroll thumb color */
+  border-radius: 5px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Scroll track color */
+}
+
 :root {
   --primary-font: "Roboto", sans-serif; /* Example: Roboto for body text */
   --secondary-font: "Lora", serif; /* Example: Lora for headings */
