@@ -1,0 +1,39 @@
+.app {
+  background-color: #d4d4d4;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.app-sidebar-container {
+  flex: 1.4;
+}
+.app-header-container {
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+}
+.app-outlet-container {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 5;
+  /* height: calc(100% - 1px); Accounts for padding */
+  border-radius: 10px;
+}
+.app-widgets {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
