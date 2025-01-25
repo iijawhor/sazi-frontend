@@ -1,4 +1,5 @@
 .button {
   font-size: var(--base-font-size);
   width: 100%;
+  cursor: pointer;
 }
